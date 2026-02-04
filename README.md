@@ -242,7 +242,7 @@ This project provides hands-on experience with:
 
 ## References
 
-- Swedish Auto Insurance Dataset: [GitHub Repository](https://raw.githubusercontent.com/aaubs/ds-master/main/data/Swedish_Auto_Insurance_dataset.csv)
+- Swedish Auto Insurance Dataset: [Raw Data File (CSV)](https://raw.githubusercontent.com/aaubs/ds-master/main/data/Swedish_Auto_Insurance_dataset.csv)
 - Attention Mechanism: "Attention Is All You Need" (Vaswani et al., 2017)
 - Gradient Descent: Standard optimization technique in machine learning
 
