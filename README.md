@@ -43,7 +43,7 @@ The training process follows these steps for each sample:
 
 ### Manual Computation
 
-The file `manualCompute.ods` contains a spreadsheet with manually computed values for the first 3 samples, showing:
+The file `manualCompute.ods` contains a spreadsheet with manually computed values for the first 10+ samples, showing:
 - Initial weight (w_old)
 - Input value (x)
 - Predicted output (ŷ)
