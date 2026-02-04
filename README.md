@@ -94,10 +94,23 @@ Where:
 
 ### Visualization
 
-The implementation creates scatter plots showing:
-- Attention output embeddings for both sentences
-- How the same word ("fine") has different representations in different contexts
-- Cosine similarity metrics before and after attention
+The implementation includes two visualization approaches:
+
+**PartB.py** creates separate scatter plots showing:
+- Attention output embeddings for each sentence individually
+- Red circles highlighting the word "fine" in each plot
+- Cosine similarity metrics printed to console
+
+**PartB2.py** provides an enhanced side-by-side visualization showing:
+- Both sentences in a single comparative view
+- Original embeddings (gray circles) vs. contextual embeddings (colored diamonds)
+- Prominent arrows showing how "fine" moves in embedding space
+- Subtle dotted lines showing movement of all other words
+- Interactive hover functionality to identify words
+- Cosine similarity change displayed in the plot title (before → after)
+- Scaled dot-product attention for more numerically stable computations
+
+Both implementations demonstrate how the same word ("fine") has different representations in different contexts, validating the power of attention mechanisms.
 
 ## Installation
 
@@ -167,7 +180,7 @@ The dashboard provides:
 
 ### Part B: Attention Contextualization
 
-Run the attention visualization:
+Run the basic attention visualization:
 ```bash
 python PartB.py
 ```
@@ -175,9 +188,23 @@ python PartB.py
 This will:
 1. Initialize embeddings for all unique words in both sentences
 2. Compute self-attention for each sentence
-3. Display scatter plots showing attention output embeddings
+3. Display separate scatter plots showing attention output embeddings for each sentence
 4. Print cosine similarity metrics to demonstrate context-dependent representations
 5. Open interactive Plotly visualizations in your browser
+
+Run the enhanced side-by-side attention visualization:
+```bash
+python PartB2.py
+```
+
+This provides an improved visualization that:
+1. Shows both sentences in a single side-by-side comparison view
+2. Displays original embeddings (gray circles) and contextual embeddings (colored diamonds)
+3. Highlights movement of "fine" with a prominent arrow
+4. Shows subtle movement of all other words with dotted lines
+5. Enables hover interaction to identify words
+6. Shows cosine similarity change in the title (before → after attention)
+7. Uses scaled dot-product attention for more stable computations
 
 ## File Structure
 
@@ -196,8 +223,11 @@ M4_Assignment_1/
 ├── app.py                   # Interactive Dash dashboard for Part A
 │                           # Visualizes training process with interactive controls
 │
-└── PartB.py                 # Attention mechanism implementation
-                            # Demonstrates context-dependent embeddings
+├── PartB.py                 # Basic attention mechanism implementation
+│                           # Demonstrates context-dependent embeddings
+│
+└── PartB2.py                # Enhanced attention visualization with side-by-side comparison
+                            # Shows original vs contextual embeddings with movement indicators
 ```
 
 ## Requirements
